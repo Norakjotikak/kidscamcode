@@ -7,7 +7,7 @@
 
 
 body{
-    background-color: cadetblue;
+    background-color: burlywood;
     width: 90%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0 auto;
@@ -179,7 +179,7 @@ nav ul li a{
     margin: 0 auto;
 
     background-image: url(./imges/2019.jpg);
-    animation: slideshow 4s infinite ;
+    animation: slideshow 20s infinite ;
     background-size: cover;
 }
 
@@ -188,13 +188,151 @@ nav ul li a{
     0%{
         background-image: url(./imges/2019.jpg);
     }
-    50%{
+    25%{
         background-image: url(./imges/2020.jpg);
     }
-    75%{
+    50%{
         background-image: url(./imges/2021.jpg);
     }
-    100%{
+    75%{
         background-image: url(./imges/2022.jpg);
     }
+    100%{
+        background-image: url(./imges/2019.jpg);
+    }
 }
+
+
+.course{
+    background-color: grey;
+}
+
+.course-card{
+    background-color: white;
+    width: 90%;
+    height: 180px;
+
+    margin: 0 auto;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 40%;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.course-info{
+    width: 60%;
+    float: right;
+
+    padding: 10px 15px;
+
+}
+
+.level{
+    color: brown;
+}
+
+.course-info h3{
+    font-size: 20px;
+}
+
+.course-info h4{
+    font-size: 16px;
+    color: darkgray;
+}
+
+
+
+.footer{
+    background-color:crimson;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+table{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    border-collapse: collapse;
+
+}
+
+thead{
+    height: 75px;
+    background-color: lightslategray;
+}
+
+thead tr th:first-child{
+    width: 50%;
+}
+
+thead tr th:nth-child(3){
+    width: 30%;
+}
+tbody tr{
+    height: 50px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+tbody tr:nth-child(even){
+    background-color: dimgray;
+}
+
+tbody tr:hover{
+    background-color: teal;
+}
+
+td, th{
+    border: 3px solid white;
+
+}
+
+.teacher-card{
+    width: 200px;
+    height: 300px;
+    background-color: wheat;
+
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.25s all linear;
+    margin: 5px;
+    margin-bottom: 20px;
+    
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.teacher-card img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 4px white;
+
+}
+
+.teacher-card:hover{
+    transform: scale(1.1);
+}
+
+.teacher{
+    text-align: center;
+}
+
